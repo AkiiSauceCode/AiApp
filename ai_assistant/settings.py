@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-4mc8_$u^om%a_+9%ugun0(mwdejz_7np&d=pv7#ei%g20dgjjt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -123,6 +123,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'assistant' / 'static',
 ]
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
